@@ -1,0 +1,25 @@
+POST http://localhost:3000/user/add
+Content-Type: application/json
+
+{
+  "username": "test",
+  "password": "password"
+}
+
+###
+GET http://localhost:3000/user/findAll
+
+###
+GET http://localhost:3000/user/findById/609cd7d967f77e25846d14e4
+
+###
+PUT http://localhost:3000/user/update/609cd7d967f77e25846d14e4
+Content-Type: application/json
+
+{
+  "username": "Jane",
+  "password": "password"
+}
+
+###
+DELETE http://localhost:3000/user/delete/609d4a61beff396d50ae7226
